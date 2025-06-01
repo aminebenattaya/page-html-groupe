@@ -8,3 +8,36 @@ body {
 h1 {
     color: steelblue;
 } 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .signature {
+    color: #007acc;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    display: inline-block;
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0;
+    animation: signatureAnim 1.5s forwards ease-out;
+  }
+  
+  @keyframes signatureAnim {
+    0% {
+      transform: scale(0.8) rotate(-5deg);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05) rotate(2deg);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
